@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>craft - sader</title>
-        <meta name="description" content="sader's craft and writings" />
+        <meta name="description" content="Atharva's craft and writings" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -12,14 +12,52 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>" />
         <style>
             body {
-                padding: 2rem;
+                padding: 1.5rem 2rem;
+                max-width: 100%;
+            }
+
+            header {
+                margin-bottom: 1rem;
+                flex-wrap: wrap;
+            }
+
+            .profile {
+                flex-direction: row;
+                gap: 1rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .profile a {
+                flex-direction: row;
+                gap: 0.8rem;
+            }
+
+            .profile-img {
+                width: 50px;
+                height: 50px;
+                float: none;
+                margin: 0;
+                border: 1px solid var(--text-color);
+            }
+
+            .site-title {
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-top: 0.5rem;
+                padding-top: 0.5rem;
+                gap: 1rem;
             }
 
             .doc-frame {
                 width: 100%;
-                height: calc(100vh - 220px);
+                height: calc(100vh - 140px);
                 border: 2px solid var(--text-color);
                 background-color: white;
                 display: block;
@@ -27,22 +65,17 @@
 
             @media (max-width: 600px) {
                 body {
-                    padding: 0;
-                    max-width: 100%;
+                    padding: 1rem;
                 }
 
                 header {
-                    padding: 1rem;
-                    margin-bottom: 0;
+                    padding: 0;
+                    margin-bottom: 0.8rem;
                 }
 
                 .doc-frame {
-                    height: calc(100vh - 140px);
-                    border: none;
-                }
-
-                main {
-                    padding: 0;
+                    height: calc(100vh - 120px);
+                    border: 1px solid var(--text-color);
                 }
             }
         </style>
@@ -56,17 +89,22 @@
                         alt="sader's photo"
                         class="profile-img"
                     />
-                    <h1 class="site-title">SADER</h1>
+                    <h1 class="site-title"></h1>
                 </a>
             </div>
             <nav class="nav-links">
                 <a href="index.html" class="nav-link">ABOUT</a>
                 <a href="craft.html" class="nav-link active">CRAFT</a>
+                <a href="projects.html" class="nav-link">PROJECTS</a>
             </nav>
         </header>
 
         <main>
-            <iframe class="doc-frame" src="https://docs.google.com/document/d/e/2PACX-1vQr10w_cJ3YwI_q78kvi_D461lSK02wrKXPioowXjyKrTuNQbbjf-OIMbgBJQTocOrTMAPEv2E7wNsM/pub?embedded=true"></iframe>
+            <iframe
+                class="doc-frame"
+                src="https://docs.google.com/document/d/e/2PACX-1vQr10w_cJ3YwI_q78kvi_D461lSK02wrKXPioowXjyKrTuNQbbjf-OIMbgBJQTocOrTMAPEv2E7wNsM/pub?embedded=true"
+                title="Google Document"
+            ></iframe>
         </main>
     </body>
 </html>
